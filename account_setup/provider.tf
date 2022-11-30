@@ -4,7 +4,7 @@ data "google_billing_account" "acct" {
 }
 
 resource "random_password" "password" {
-	length = 16
+	length = 14
 	numeric = false
 	special = false
 	lower = true
