@@ -34,6 +34,6 @@ resource "null_resource" "unset-project" {
 	command = "gcloud config unset project"
 	}
 }
-=======
-}
->>>>>>> 4f2dd3752c6d06b45eaf068afc6797299315f8b4
+
+
+
