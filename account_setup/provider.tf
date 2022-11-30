@@ -4,11 +4,7 @@ data "google_billing_account" "acct" {
 }
 
 resource "random_password" "password" {
-<<<<<<< HEAD
 	length = 14
-=======
-	length = 16
->>>>>>> 4f2dd3752c6d06b45eaf068afc6797299315f8b4
 	numeric = false
 	special = false
 	lower = true
@@ -19,7 +15,7 @@ resource "google_project" "terraform-project" {
 	name = "terraform-project"
 	project_id = random_password.password.result
 	billing_account = data.google_billing_account.acct.id
-<<<<<<< HEAD
+
 }
 
 resource "null_resource" "set-project" {
